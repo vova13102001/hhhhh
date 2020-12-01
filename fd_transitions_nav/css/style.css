@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;min-height: 300vh;
+  margin: 0;
+  margin-top: 150px;
+}
+
+
+
+
+.page-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  padding: 20px 10px;
+
+  border-bottom: 1px solid black;
+  box-shadow: 0px -3px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0 0 0 1em;
+  font-size: 1.2em;
+
+  transition-property: display;
+  transition-delay: 1s;
+}
+
+.list-item {
+  display: inline-block;
+}
+
+.list-item + .list-item {
+  margin-left: 1.5em;
+}
+
+.link {
+  position: relative;
+
+  padding: 0.6em 2em;
+  border: 1px solid red;
+  text-decoration: none;
+  color: inherit;
+
+  background-color: #f10036;
+
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.link:hover,
+.link:focus {
+  outline: none;
+  background-color: #9cef00;
+  color: white;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+.link:active {
+  box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.link::after{
+  content: '';
+  position: absolute;
+
+  left: 0;
+  bottom: -1em;
+
+  width: 0;
+  height: 0.5em;
+
+  transition: width, ease-in-out, 0.3s;
+  
+  background-color: black;
+}
+
+.list-item:hover .link::after{
+  width: 100%;
+}
+
+aside{ min-height: 30vh;
+  margin: 0;
+  margin-top: 15px;
+}
+.page-header1 {
+  position: fixed;
+  z-index: 10;
+  top: 8;
+  right: 20;
+  left: 0;
+  background-color: white;
+  padding: 200px 10px;
+
+  border-bottom: 1px solid black;
+  box-shadow: 0px -3px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navigation-list1 {
+  list-style: none;
+  padding: 0 0 0 1em;
+  font-size: 1.2em;
+
+  transition-property: display;
+  transition-delay: 1s;
+}
+
+.list-item1 {
+  display: inline-block;
+}
+
+.list-item1 + .list-item1 {
+  margin-left: 1.5em;
+}
+
+.link1 {
+  position: relative;
+
+  padding: 0.6em 2em;
+  border: 1px solid red;
+  text-decoration: none;
+  color: inherit;
+
+  background-color: #f10036;
+
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.link1:hover,
+.link1:focus {
+  outline: none;
+  background-color: #9cef00;
+  color: white;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+.link1:active {
+  box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.link1::after{
+  content: '';
+  position: absolute;
+
+  left: 1;
+  bottom: -1em;
+
+  width: 022;
+  height: 0.5em;
+
+  transition: width, ease-in-out, 0.3s;
+  
+  background-color: black;
+}
+
+.list-item1:hover .link1::after{
+  width: 100%;
+}
